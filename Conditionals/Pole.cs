@@ -8,19 +8,16 @@ namespace Conditionals
 
             if (pole == Pole.North)
             {
-                animal = "Polar Bear"
+                animal = "Polar Bear";
             }
             else
             {
-                animal = "Pengu"
+                animal = "Pengu";
             }
 
-        Console.WriteLine($"The animal that lives in the {pole} Pole is the {animal}")
+            Console.WriteLine($"The animal that lives in the {pole} Pole is the {animal}");
 
-
-
-
-
+                
         }
     }
     public enum Pole
