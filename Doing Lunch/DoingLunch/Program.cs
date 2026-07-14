@@ -22,7 +22,7 @@ namespace DoingLunch
             string sBrussel=Console.ReadLine();
             int brusselCount = Convert.ToInt32(sBrussel);
 
-            Console.WriteLine($“Hello, your lunch is {mainCourse} with {roastCount} roast potatoes and {brusselCount} brussel sprouts.”);
+            Console.WriteLine($"Hello, your lunch is {mainCourse} with {roastCount} roast potatoes and {brusselCount} brussel sprouts”);
 
             // Put the display here!
             Console.WriteLine("Hello, your lunch is {0}",mainCourse);
