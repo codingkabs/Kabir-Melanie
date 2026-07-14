@@ -40,31 +40,61 @@ namespace Conditionals
 
 
             Console.WriteLine("##### Switch Statement #####");
-            var city = CapitalCities.Madrid;
+            var city = CapitalCities.London;
             string countryMessage = "";
+            Console.WriteLine(countryMessage);
 
-            switch (city) 
+            //switch (city)
+            //{
+            //    case CapitalCities.London:
+            //        countryMessage = $"{city} is the capital of the UK";
+            //        break;
+
+            //    case CapitalCities.Paris:
+            //        countryMessage = $"{city} is the capital of France";
+            //        break;
+
+            //    case CapitalCities.Rome:
+            //        countryMessage = $"{city} is the capital of Italy";
+            //        break;
+
+            //    case CapitalCities.Madrid:
+            //        countryMessage = $"{city} is the capital of Spain";
+            //        break;
+
+            //    default:
+            //        countryMessage = "Unknown city";
+            //        break;
+
+            //}
+
+
+            countryMessage = city switch
             {
-                case CapitalCities.London:
-                    countryMessage = $"{city} is the capital of the UK";
-                    break;
+                CapitalCities.London => $"{city} is the capital of the UK",
 
-                case CapitalCities.Paris:
-                    countryMessage = $"{city} is the capital of France";
-                    break;
+                CapitalCities.Paris => $"{city} is the capital of France",
 
-                case CapitalCities.Rome:
-                    countryMessage = $"{city} is the capital of Italy";
-                    break;
+                CapitalCities.Rome => $"{city} is the capital of Italy",
 
-                case CapitalCities.Madrid:
-                    countryMessage = $"{city} is the capital of Spain";
-                    break;
+                CapitalCities.Madrid => $"{city} is the capital of Spain",
 
-                default:
-                    countryMessage = "Unknown city";
-                    break;
-            }
+                _ => "Unknown city",
+
+            };
+
+
+
+
+
+
+
+
+
+
+            Console.WriteLine(countryMessage);
+
+        }
+
     }
- 
-}}
+}
